@@ -3,6 +3,18 @@ TIC TAC TOE
 """
 import random
 
+def dsply_board(pos):
+    """
+    :param pos: pos dict to play
+    :type pos: dict
+    """
+    i = 1
+    print("\n-------------------------------------------------")
+    for _ in range(3):
+        for _ in range(3):
+            print(f"|\t{pos[i]}\t", end='|')
+            i = i + 1
+        print("\n-------------------------------------------------")
 
 def set_board(pos, postn, xo, pos_lst):
     """
@@ -22,7 +34,6 @@ def set_board(pos, postn, xo, pos_lst):
 
 def check_match(pos):
     """
-
     :param pos: playing board
     :type pos: dict
     :return: true if game over
@@ -38,27 +49,17 @@ def check_match(pos):
 
 def play(xo="X"):
     """
-
     :param xo: user char
     :type xo: str
     :return: none
     :rtype: none
     """
-    pos_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    pos = {1: "1", 2: "2", 3: "3",
-           4: "4", 5: "5", 6: "6",
-           7: "7", 8: "8", 9: "9"}
-    print(pos)
+    pos_lst = [i for i in range(1,10)]
+    pos = {i: f"{i}" for i in pos_lst}
     user_xo = xo
     cmp_xo = "O" if xo == "X" else "X"
     while True:
-        i = 1
-        print("\n-------------------------------------------------")
-        for _ in range(3):
-            for _ in range(3):
-                print(f"|\t{pos[i]}\t", end='|')
-                i = i + 1
-            print("\n-------------------------------------------------")
+        dsply_board(pos)
 
         postn = int(input("Where would you like to place {}: ".format(user_xo)))
         if postn in pos_lst:
@@ -83,3 +84,4 @@ if __name__ == "__main__":
     else:
         xo = input("Would you like to be player X or O (or anything else): ").upper()
         play(xo)
+        
