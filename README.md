@@ -11,3 +11,12 @@ This repository is where we add games that python beginners can learn from.
       
   </ul>
 </p>
+
+## Before you merge
+
+*pre-commit checks*
+
+## Cherry picking a specific game
+*cheery picking and rebasing*
+
+## Monorepo
