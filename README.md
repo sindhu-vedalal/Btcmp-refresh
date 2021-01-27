@@ -36,7 +36,7 @@ References:
     </p>
 
   <p>
-    References: <a herf="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows"> 3 </a>
+    References: <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows">3</a>
   </p>
 
 
@@ -68,6 +68,7 @@ References:
 
 ## Rebasing
   Rebasing rewrites your git history to put all the commits in their proper place in time - with merge you have your original commits plus merge history, with cherry picking, the commits are written right on to the branch you are rebasing into - harder to undo.
+  
   Usage:
   git rebase -i *branch-name*
 
