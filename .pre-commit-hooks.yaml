@@ -1,6 +1,7 @@
--   id: check-ast
-    name: Check python ast
-    description: Simply check whether the files parse as valid python.
-    entry: check-ast
+-   id: trailing-whitespace
+    name: Trim Trailing Whitespace
+    description: This hook trims trailing whitespace.
+    entry: trailing-whitespace-fixer
     language: python
-    types: [python]
+    types: [text]
+    stages: [commit, push, manual]

@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/sindhu-vedalal/Python-games-beginners.git
+    rev: master
+    hooks:
+    -   id: trailing-whitespace
