@@ -15,9 +15,12 @@ This repository is where we add games that python beginners can learn from.
 ### Branching startegy - Gtihub flow workflow for short features and hotfixes
 <p>
 In short - create a copy and record all changes to that copy.
+  
 Create a new feature branch and in it add your new game.
+
 Once your game is complete, create a pull request to merge your game into the repo.
-Makke sure to name you branch feature-*feature-name* for short features and hotfix-* to fix bugs
+</p><p>
+  Makke sure to name you branch feature-<i>feature-name</i> for short features and hotfix-* to fix bugs
 </p>
 
 
@@ -31,7 +34,8 @@ References:
 
 ### Branching strategy for a long term branches
   <p>
-    The recommended approach for long term feature is to periodically keep merging with the development branch (merging from one branch into another multiple times over a long period ).
+    The recommended approach for long term feature is to periodically keep merging with the development branch (merging from one branch into another multiple times over a long period ).</p>
+  <p>
     Merge in increments until the entire feature is complete and ready to merge into master.
     </p>
 
@@ -44,33 +48,38 @@ References:
 ## Before you merge
 
 <p>
-    To make sure that all code in the repo follows the same coding format, pre-commit checks are in place.
+    To make sure that all code in the repo follows the same coding format, pre-commit checks are in place.</p>
+    
+  <p>
     Everytime you try to commit - pre-commit script runs to make sure your commit follow the standard.</p>
 <p>
     Follow installation instructions <a href="https://pre-commit.com/#install"> here </a>
 </p>
-    Once installed, make sure the .pre-commit-config.yaml file specifies the standards to follow.
-    Run pre-commit install in your git repo to link the pre-commit hooks. [Hooks are generally found in <repo>/.git/hooks]
+<p>
+    Once installed, make sure the .pre-commit-config.yaml file specifies the standards to follow - we've just included one so far.
+    </p>
+    <p>
+    Run <strong>pre-commit install</strong> in your git repo to link the pre-commit hooks. [Hooks are generally found in <repo>/.git/hooks]
     Your pre-commit hooks are ready!
-
-
 
 </p>
 
 ## Cherry picking a specific game
+<p>
     To pull specific changes from a branch use cherry picking.
     Use the commit hash (find the commit hash through git log) to pickup a specific change.
-
+</p><p>
     Usage:
-    git cherry-pick *commit-hash*
-
+  git cherry-pick <i>commit-hash</i>
+</p><p>
     Make sure you are already on the branch onto which you want to cherry pick the change.
+    </p>
 
 ## Rebasing
   Rebasing rewrites your git history to put all the commits in their proper place in time - with merge you have your original commits plus merge history, with cherry picking, the commits are written right on to the branch you are rebasing into - harder to undo.
   
   Usage:
-  git rebase -i *branch-name*
+  git rebase -i <i>branch-name</i>
 
   WE recommend merging over rebasing for this repo.
 
