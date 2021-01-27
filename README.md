@@ -5,9 +5,9 @@ This repository is where we add games that python beginners can learn from.
 ## Contributing
 <p>There are many ways in which you can contribute to the repository:
   <ul>
-    <li> Want to add code for an advanced game? Need longer time than the average small game? Follow "Branching strategy for a long term feature"
-    <li> Got a bunch of easy games you'd like to add? Follow "Github flow workflow"."
-    <li> Think you've found a problem with one of the games? *Yikes!* Follow "github flow workflow
+    <li> Want to add code for an advanced game? Need longer time than the average small game? Follow "Branching strategy for a long term feature".
+    <li> Got a bunch of easy games you'd like to add? Follow "Github flow workflow".
+    <li> Think you've found a problem with one of the games? *Yikes!* Follow "github flow workflow".
 
   </ul>
 </p>
