@@ -16,13 +16,12 @@ This repository is where we add games that python beginners can learn from.
 
 <p>
     To make sure that all code in the repo follows the same coding format, pre-commit checks are in place.
-    Everytime you try to commit - pre-commit script runs to make sure your commit follow the standard.
-
+    Everytime you try to commit - pre-commit script runs to make sure your commit follow the standard.</p>
+<p>
     Follow installation instructions <a href="https://pre-commit.com/#install"> here </a>
-
+</p>
     Once installed, make sure the .pre-commit-config.yaml file specifies the standards to follow.
     Run pre-commit install in your git repo to link the pre-commit hooks. [Hooks are generally found in <repo>/.git/hooks]
-
 
 
 
