@@ -1,0 +1,6 @@
+-   id: check-ast
+    name: Check python ast
+    description: Simply check whether the files parse as valid python.
+    entry: check-ast
+    language: python
+    types: [python]
