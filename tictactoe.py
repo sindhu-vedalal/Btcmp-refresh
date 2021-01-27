@@ -84,4 +84,4 @@ if __name__ == "__main__":
     else:
         xo = input("Would you like to be player X or O (or anything else): ").upper()
         play(xo)
-        
+

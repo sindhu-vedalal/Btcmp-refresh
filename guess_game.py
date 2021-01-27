@@ -44,4 +44,3 @@ while True:
     else:
         print('COLDER!')
         PREV = NUM
-    
